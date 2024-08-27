@@ -68,4 +68,8 @@ app.post("/loggedIn",async(req,res)=>{
     })
 })
 
+app.get("/read",(req,res)=>{
+    //reading cookie
+    res.send(req.cookies)
+})
 app.listen(3000);
